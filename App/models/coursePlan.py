@@ -15,5 +15,5 @@ class CoursePlan(db.Model):
     def get_json(self):
         return{
             'planId': self.planId,
-            'studentId': self.studentId,
+            'studentId': self.studentId
         }
