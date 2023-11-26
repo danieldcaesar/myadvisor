@@ -15,6 +15,7 @@ class Course(db.Model):
     students = db.relationship('Student', backref='courses', lazy=True)
     programs = db.relationship('ProgramCourses', backref='courses', lazy=True)
     prerequisites = db.relationship('Prerequisites', backref='courses', lazy = True)
+    course_plan = db.relationship('CoursePlan', backref='courses', lazy=True)
 
     
     def __init__(self, code, title, credits, grade, semester, year, complete, prereq):
