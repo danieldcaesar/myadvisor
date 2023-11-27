@@ -14,7 +14,7 @@ class FastGradStrategy(CoursePlanStrategy):
     def generateCoursePlan():
         return "Fastest Graduation Course Plan Chosen"
     
-class EasyCoursesStrategy(CoursePlanStrategy);
+class EasyCoursesStrategy(CoursePlanStrategy):
     def generateCoursePlan():
         return "Easiest Courses Course Plan Chosen"
     
